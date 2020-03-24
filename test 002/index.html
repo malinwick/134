@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width,
+ 	initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compitable" content="ie=edge">
+ 	<script src="./js/test.js" defer></script>
+  	<script src="./js/detaljer.js" defer></script>
+   	<script src="./js/oversikt.js" defer></script>
+ 	<script src="./js/sammenligning.js" defer></script>
+    <link href="css/main.css" rel="stylesheet">
+  <title> document</title>
+  </head>
+  <body>
+    <ul>
+      <li data-tab-target="#introduksjon" class="active tabs">Introduksjon</li>
+      <li data-tab-target="#oversikt" class="tabs">Oversikt</li>
+      <li data-tab-target="#detaljer" class="tabs">Detaljer</li>
+      <li data-tab-target="#sammenligning" class="tabs">Sammenligning</li>
+      </ul>
+
+    <div class="tab-content">
+      <div id="introduksjon" data-tab-content class="active">
+        <h1>Folk</h1>
+        <p id="innhold"> I denne oppgaven har vi laget et verktøy for å vise data om Norges befolknings.
+            <br>  Du kan navigerer deg gjennom siden ved hjelp av navigasjonsbaren.<br> Dataen er hentet
+              fra Statistisk Sentralbyrå.
+              </p>
+                <h2> kilder </h2>
+                <p> Innholdet i datan kan inneholde feil og mangler. </p>
+                <ul>
+                  <li><a href="http://data.ssb.no/api/v0/dataset/104857?lang=no" target="_blank">Befolkning </a></li>
+                  <li><a href="http://data.ssb.no/api/v0/dataset/100145?lang=no" target="_blank"> Sysselsett </a></li>
+                  <li><a href="http://data.ssb.no/api/v0/dataset/85432?lang=no" target="_blank"> Utdanning </a></li>
+                  </ul>
+        </div>
+        <div id="oversikt" data-tab-content>
+        <h1>Oversikt</h1>
+        <table id="tb">
+            <th>kommunenummer</th>
+            <th>kommunenavn</th>
+            <th>Menn</th>
+            <th>Kvinner</th>
+          </table>
+        </div>
+        <div id="detaljer" data-tab-content>
+        <h1>Detaljer</h1>
+        </div>
+        <div id="sammenligning" data-tab-content>
+        <h1>Sammenligning</h1>
+        </div>
+        </div>
+
+        <footer>
+              <p>Oppgavebesvarelse INFO134.</p>
+            </footer>
+
+    </body>
+    </html>
